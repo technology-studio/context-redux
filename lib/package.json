@@ -1,6 +1,6 @@
 {
   "name": "@txo/context-redux",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Technology Studio - Context redux",
   "main": "index.js",
   "typings": "index.d.ts",
