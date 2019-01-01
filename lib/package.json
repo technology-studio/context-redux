@@ -18,7 +18,10 @@
   "scripts": {
   },
   "dependencies": {
+    "@txo/functional": "^1.0.0",
+    "@txo/redux": "^1.0.0"
   },
   "peerDependencies": {
+    "@txo-peer-dep/log": "^1.0.1"
   }
 }
