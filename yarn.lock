@@ -937,10 +937,10 @@
   resolved "https://registry.yarnpkg.com/@txo/log-console/-/log-console-1.0.0.tgz#9f9a96054998dcd52cc5f2ced448b303e07d5727"
   integrity sha512-haroE3UZfE35mwQ5MOiJretMArMh0/cfitFclEnqELzXk/F0LXbckZQmo5etwpBHOfRVIpm/LXgEYn5rUq8jdg==
 
-"@txo/redux@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@txo/redux/-/redux-1.0.0.tgz#137ef522ef9be951dfab6147101b936be82af863"
-  integrity sha512-ajqQ1oNvM8UT72yR5zoaVxwqXmBuLasMPyR9h51mI04vSD9zpLoV149PDb6//Eou9pukjekVMJQamJ4Yg6jK+w==
+"@txo/redux@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@txo/redux/-/redux-2.0.0.tgz#5b9a0c4bce57ece75b4320e82b6e830395a84072"
+  integrity sha512-cp8OHDMk46dau8MZHqScwq1yhKii7JGZs2lMRiyNWqoc+OaOcn4yQildZNwVbjImRP75gRh9dNsyXgNMbUM/9g==
   dependencies:
     constant-case "^2.0.0"
     redux "^4.0.1"

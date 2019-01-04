@@ -6,8 +6,6 @@
  * @flow
  */
 
-'use strict'; // eslint-disable-line
-
 import { DEFAULT_CONTEXT } from '../lib'
 import { sampleArrayContextRedux } from '../sample'
 
