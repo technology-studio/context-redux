@@ -1,6 +1,6 @@
 {
   "name": "@txo/context-redux",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Technology Studio - Context redux",
   "main": "index.js",
   "repository": {
@@ -35,7 +35,7 @@
   "dependencies": {
     "@txo-peer-dep/log": "^1.0.1",
     "@txo/functional": "^1.0.1",
-    "@txo/redux": "^2.0.0"
+    "@txo/redux": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -67,6 +67,9 @@
     ],
     "transformIgnorePatterns": [
       "/node_modules/(?!@txo).+\\.js$"
+    ],
+    "modulePathIgnorePatterns": [
+      "lib"
     ],
     "testPathIgnorePatterns": [
       "/node_modules/",

@@ -7,34 +7,41 @@
  */
 
 import { type Action } from '@txo/redux'
-import { Log } from '@txo-peer-dep/log'
 
-import { createContextRedux } from '../lib'
+import {
+  createContextRedux,
+  type ContextRedux,
+} from '../lib'
 
-const log = new Log('txo.context-redux.sample.Redux')
-
- type AddAttributes = Action & { item: string }
- type RemoveAttributes = Action & { item: string }
-
-const remove = <TYPE>(array: TYPE[], value: ?TYPE): TYPE[] => {
-  if (value) {
-    const index = array.indexOf(value)
-    if (index !== -1) {
-      return [...array.slice(0, index), ...array.slice(index + 1)]
-    }
-  }
-  return array
+type SampleData = {
+  sampleNumber: number,
 }
 
-export const sampleArrayContextRedux = createContextRedux<*, *, *>({
-  filter: {},
-  initialState: [],
-  handlers: {
-    add: (state: string[], { item }: AddAttributes) => {
-      log.debug('ADD', { state, item })
-      return (item && [...state, item]) || state
-    },
-    remove: (state: string[], { item }: RemoveAttributes) => remove(state, item),
+type SetAttributes = {
+  data: SampleData,
+}
+
+export type Creators = {
+  set: (attributes: SetAttributes) => Action & SetAttributes,
+  clear: () => Action,
+}
+
+export type State = {|
+  data: ?SampleData,
+|}
+
+export const sampleContextRedux: ContextRedux<State, Creators> = createContextRedux<State, _>({
+  filter: {
+    data: true,
   },
-  prefix: 'sample.array.',
+  initialState: {
+    data: null,
+  },
+  handlers: {
+    set: (state, { type, error }) => state,
+    clear: state => state,
+  },
+  prefix: '.sample.prefix',
 })
+
+sampleContextRedux.creators.set({ data: { sampleNumber: 1 } })

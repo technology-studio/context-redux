@@ -6,6 +6,6 @@
  * @flow
  */
 
-import { sampleArrayContextRedux } from './Redux'
+import { sampleArrayContextRedux } from './ArrayRedux'
 
 export { sampleArrayContextRedux }
