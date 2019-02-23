@@ -46,3 +46,4 @@ export const sampleContextRedux: ContextRedux<State, ActionCreators> = createCon
 })
 
 sampleContextRedux.creators.set({ data: { sampleNumber: 1 } })
+sampleContextRedux.creators.clear()
