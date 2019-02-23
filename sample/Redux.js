@@ -6,14 +6,15 @@
  * @flow
  */
 
-import { type Action } from '@txo/redux'
+import { type ActionCreator } from '@txo/redux'
+import update from 'immutability-helper'
 
 import {
   createContextRedux,
   type ContextRedux,
 } from '../lib'
 
-type SampleData = {
+export type SampleData = {
   sampleNumber: number,
 }
 
@@ -21,16 +22,16 @@ type SetAttributes = {
   data: SampleData,
 }
 
-export type Creators = {
-  set: (attributes: SetAttributes) => Action & SetAttributes,
-  clear: () => Action,
+export type ActionCreators = {
+  set: ActionCreator<SetAttributes>,
+  clear: ActionCreator<>,
 }
 
 export type State = {|
   data: ?SampleData,
 |}
 
-export const sampleContextRedux: ContextRedux<State, Creators> = createContextRedux<State, _>({
+export const sampleContextRedux: ContextRedux<State, ActionCreators> = createContextRedux<State, _>({
   filter: {
     data: true,
   },
@@ -38,8 +39,8 @@ export const sampleContextRedux: ContextRedux<State, Creators> = createContextRe
     data: null,
   },
   handlers: {
-    set: (state, { type, error }) => state,
-    clear: state => state,
+    set: (state, { data }) => update(state, { data: { $set: data } }),
+    clear: state => update(state, { data: { $set: null } }),
   },
   prefix: '.sample.prefix',
 })

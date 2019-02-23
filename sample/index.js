@@ -7,5 +7,16 @@
  */
 
 import { sampleArrayContextRedux } from './ArrayRedux'
+import {
+  sampleContextRedux,
+  type SampleData,
+} from './Redux'
 
-export { sampleArrayContextRedux }
+export {
+  sampleArrayContextRedux,
+  sampleContextRedux,
+}
+
+export type {
+  SampleData,
+}
