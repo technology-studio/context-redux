@@ -24,7 +24,7 @@
     "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | eslint --cache --format=node_modules/eslint-formatter-pretty",
     "lint": "eslint --format=node_modules/eslint-formatter-pretty .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty . --fix",
-    "git-hook": "yarn -s lint"
+    "git-hook": "yarn -s lint && yarn flow check"
   },
   "husky": {
     "hooks": {

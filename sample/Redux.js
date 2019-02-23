@@ -6,11 +6,11 @@
  * @flow
  */
 
-import { type ActionCreator } from '@txo/redux'
 import update from 'immutability-helper'
 
 import {
   createContextRedux,
+  type ContextActionCreator,
   type ContextRedux,
 } from '../lib'
 
@@ -23,8 +23,8 @@ type SetAttributes = {
 }
 
 export type ActionCreators = {
-  set: ActionCreator<SetAttributes>,
-  clear: ActionCreator<>,
+  set: ContextActionCreator<SetAttributes>,
+  clear: ContextActionCreator<>,
 }
 
 export type State = {|
