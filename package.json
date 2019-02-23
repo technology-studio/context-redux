@@ -1,6 +1,6 @@
 {
   "name": "@txo/context-redux",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Technology Studio - Context redux",
   "main": "index.js",
   "repository": {
@@ -35,7 +35,7 @@
   "dependencies": {
     "@txo-peer-dep/log": "^1.0.1",
     "@txo/functional": "^1.0.1",
-    "@txo/redux": "^3.0.0"
+    "@txo/redux": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
