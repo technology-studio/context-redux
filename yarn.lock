@@ -1444,18 +1444,19 @@
   dependencies:
     immutability-helper "^3.0.1"
 
-"@txo/flow@^1.0.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@txo/flow/-/flow-1.2.0.tgz#2f4958113fab9c27d70b4749cd7fa55c89b3cc60"
-  integrity sha512-oOc4Pwu/Fo3/TDum1X1byiu/TjUmfKUHErM04lbIbDkufENzhq0cekJvOyl/Dsj7ozxgG7fin1t9fGxdPv7ZHg==
+"@txo/flow@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@txo/flow/-/flow-2.0.0.tgz#fdbeaa12ee42b05c7167ab8fbc4ba0c9a6081b88"
+  integrity sha512-+u9XTLDXj7RtMIqHaAOuDkYGwDfG4Dsgw71d/7UKe6VrvWLn+5yLk1tpvyuZQUiI99My/+4hlORh7pYnieDIMw==
 
-"@txo/functional@^1.0.1":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-1.4.0.tgz#e4c40b7697c40a352ec49d75cac40738412640be"
-  integrity sha512-Lb7Pm+DOOyOmd8dFx4tdkI/6A7nPXg8CBzwu+T6aclO1i5Z7cJf9tgQhKOL2UKsga5E5RmkiKsQKVJ3NoOwj5Q==
+"@txo/functional@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-3.1.0.tgz#082178a7355f698be1c660167f1caa7d14c9f798"
+  integrity sha512-huFCu7vpQn5cCfwV/Xu25qgKooXJAf2oVK9KNMTC/2TNJNNbUoPMpo8oyXG5ssf7zwRCZdCLP6DjuExgJmijRA==
   dependencies:
-    "@txo/flow" "^1.0.0"
-    immutability-helper "^3.0.1"
+    "@txo/flow" "^2.0.0"
+    "@txo/log" "^1.0.0"
+    immutability-helper "^3.0.2"
 
 "@txo/glow@^1.2.3":
   version "1.2.3"
@@ -1483,6 +1484,11 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@txo/log-console/-/log-console-2.0.0.tgz#9dd0b90af3b4380fe1107bfce3dae908a75d312a"
   integrity sha512-p9ece7Z4Mtcz9K9bL7SU2DgIPmGNmST5eiLSX9cAEl1F3WyrSAswxwUQtBggG6esyk/kv4TMifA2qu7Njgf70A==
+
+"@txo/log@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@txo/log/-/log-1.0.0.tgz#690ddd05fa3568833ebb95a521dd3b2caf23a917"
+  integrity sha512-zEIkfLqEK9mClHcqOAq+PTXg7yWmNmHmNNurJJVtg8gq1ZIb/FJtBRXqWRICkmhQ7RfCnilrclcnFlEhLyvNFw==
 
 "@txo/redux@^3.0.1":
   version "3.0.1"
@@ -3650,7 +3656,7 @@ ignore@^5.1.1:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.6.tgz#643194ad4bf2712f37852e386b6998eff0db2106"
   integrity sha512-cgXgkypZBcCnOgSihyeqbo6gjIaIyDqPQB7Ra4vhE9m6kigdGoQDMHjviFhRZo3IMlRy6yElosoviMs5YxZXUA==
 
-immutability-helper@^3.0.0, immutability-helper@^3.0.1:
+immutability-helper@^3.0.0, immutability-helper@^3.0.1, immutability-helper@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/immutability-helper/-/immutability-helper-3.0.2.tgz#e9187158b47c93368a92e84c31714c4b3dff30b0"
   integrity sha512-fcrJ26wpvUcuGRpoGY4hyQ/JOeR1HAunMmE3C0XYXSe6plAGtgTlB2S4BzueBANCPrDJ7AByL1yrIRLIlVfwpA==
