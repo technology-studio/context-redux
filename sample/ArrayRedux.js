@@ -7,7 +7,7 @@
  */
 
 import { type Action } from '@txo/redux'
-import { Log } from '@txo-peer-dep/log'
+import { Log } from '@txo/log'
 import {
   createContextRedux,
   type ContextRedux,

@@ -14,7 +14,7 @@ import {
   type Handler,
 } from '@txo/redux'
 import { translateOnPath } from '@txo/functional'
-import { Log } from '@txo-peer-dep/log'
+import { Log } from '@txo/log'
 
 import type {
   ContextRedux,
