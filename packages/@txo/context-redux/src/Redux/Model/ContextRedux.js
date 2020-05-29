@@ -14,7 +14,7 @@ import {
   type Handler,
 } from '@txo/redux'
 import { translateOnPath } from '@txo/functional'
-import { Log } from '@txo-peer-dep/log'
+import { Log } from '@txo/log'
 
 import type {
   ContextRedux,
@@ -36,7 +36,7 @@ export const createContextRedux = <
       initialState: INNER_STATE,
       state: InternalContextState<INNER_STATE>,
       action: ACTION,
-      handler: ?Handler<INNER_STATE, ACTION>
+      handler: ?Handler<INNER_STATE, ACTION>,
     ): ContextState<INNER_STATE> => {
       var nextState = state || {}
       if (handler) {
@@ -50,7 +50,7 @@ export const createContextRedux = <
         }) || {}
       }
       return log.debugProxy('HANDLER WRAPPER',
-        nextState
+        nextState,
       )
     },
   })

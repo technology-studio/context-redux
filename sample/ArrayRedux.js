@@ -7,12 +7,11 @@
  */
 
 import { type Action } from '@txo/redux'
-import { Log } from '@txo-peer-dep/log'
-
+import { Log } from '@txo/log'
 import {
   createContextRedux,
   type ContextRedux,
-} from '../lib'
+} from '@txo/context-redux'
 
 const log = new Log('txo.context-redux.sample.ArrayRedux')
 
