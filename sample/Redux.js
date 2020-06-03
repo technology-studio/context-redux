@@ -12,7 +12,7 @@ import {
   createContextRedux,
   type ContextActionCreator,
   type ContextRedux,
-} from '@txo/context-redux'
+} from '@txo/context-redux/src'
 
 export type SampleData = {
   sampleNumber: number,

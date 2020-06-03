@@ -6,7 +6,7 @@
  * @flow
  */
 
-import { DEFAULT_CONTEXT } from '@txo/context-redux'
+import { DEFAULT_CONTEXT } from '@txo/context-redux/src'
 import {
   sampleContextRedux,
   type SampleData,
