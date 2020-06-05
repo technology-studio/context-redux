@@ -11,7 +11,7 @@ import { Log } from '@txo/log'
 import {
   createContextRedux,
   type ContextRedux,
-} from '@txo/context-redux/src'
+} from '@txo/context-redux'
 
 const log = new Log('txo.context-redux.sample.ArrayRedux')
 

@@ -6,7 +6,7 @@
  * @flow
  */
 
-import { DEFAULT_CONTEXT } from '@txo/context-redux/src'
+import { DEFAULT_CONTEXT } from '@txo/context-redux'
 import { sampleArrayContextRedux } from '../sample'
 
 const SAMPLE_ITEM = 'sample-item'
