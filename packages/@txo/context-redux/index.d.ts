@@ -24,4 +24,8 @@ declare module '@txo/context-redux' {
   type ContextState<STATE> = InternalContextState<STATE> | STATE | {}
 
   type ContextRedux<INNER_STATE, CREATORS extends Record<string, unknown>> = Redux<ContextState<INNER_STATE>, CREATORS>
+
+  function createContextRedux<STATE, HANDLERS extends { [key: string]: ReduxHandler<ContextState<STATE>, any> }> (
+    attributes: CreateReduxAttributes<STATE>
+  ): ContextRedux<STATE, Creators<STATE, HANDLERS>>
 }
