@@ -5,7 +5,11 @@
 **/
 declare module '@txo/context-redux' {
   import type {
-    HandlerAction, Redux,
+    CreateReduxAttributes,
+    Creators,
+    HandlerAction,
+    Redux,
+    ReduxHandler,
   } from '@txo/redux'
 
   type ContextActionAttributes = {
