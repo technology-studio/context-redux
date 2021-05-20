@@ -16,11 +16,10 @@
     "test:watch": "concurrently \"yarn workspaces run build:watch\" \"jest --watch\"",
     "pretest": "yarn workspaces run build",
     "coverage": "jest --coverage && open coverage/lcov-report/index.html || xdg-open coverage/lcov-report/index.html",
-    "lint": "eslint --format=node_modules/eslint-formatter-pretty .",
-    "fixcode": "eslint --format=node_modules/eslint-formatter-pretty . --fix",
-    "git-hook": "yarn -s lint && yarn flow check",
-    "flow-typed:install": "scripts/flow-typed-install.sh",
-    "flow-typed:create-stub": "yarn flow-typed create-stub",
+    "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
+    "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
+    "git-hook": "yarn -s lint",
+    "postinstall": "husky install",
     "print-txo-packages": "yarn list 2> /dev/null|grep @txo|sed 's/.*\\(@txo[^@]*\\)@^*\\([^ ]*\\).*/\\1@\\2/g'|sort|uniq",
     "sanity": "yarn lint && yarn test && yarn outdated && echo 'success'",
     "wd": "yarn workspace @txo/context-redux",
@@ -60,8 +59,7 @@
   },
   "jest": {
     "testMatch": [
-      "<rootDir>/__tests__/**/*.js",
-      "**/?(*.)(spec|test).js?(x)"
+      "<rootDir>/__tests__/**/?(*.)(spec|test).js?(x)"
     ],
     "transformIgnorePatterns": [
       "/node_modules/(?!@txo).+\\.js$"
@@ -70,6 +68,7 @@
       "/node_modules/",
       "<rootDir>/__tests__/Config/",
       "<rootDir>/__tests__/Setup.js",
+      "<rootDir>/__tests__/Data.js",
       "<rootDir>/__tests__/Utils/"
     ],
     "setupFiles": [
