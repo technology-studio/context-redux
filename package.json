@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@txo/functional": "^4.5.0",
-    "@txo/redux": "/Users/erik/TC/technology-studio/com.github.technology-studio.redux"
+    "@txo/redux": "^4.0.7"
   },
   "peerDependencies": {
     "@txo-peer-dep/log": "^4.0.0"
