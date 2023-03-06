@@ -34,5 +34,6 @@ export type ContextState<STATE> = InternalContextState<STATE> | STATE | Record<s
 export type ContextRedux<
 INNER_STATE,
 HANDLER_KEY extends string,
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 HANDLERS extends Record<HANDLER_KEY, ReduxHandler<INNER_STATE, any>>
 > = Redux<ContextState<INNER_STATE>, INNER_STATE, HANDLER_KEY, HANDLERS>

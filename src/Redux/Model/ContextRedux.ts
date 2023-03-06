@@ -7,16 +7,14 @@
 
 import { translateOnPath } from '@txo/functional'
 import { Log } from '@txo/log'
+import { createReduxAdvanced } from '@txo/redux'
 import type {
+  Attributes,
   AttributesAdvanced,
+  Handler,
+  HandlerAction,
   HandlerWrapper,
   ReduxHandler,
-} from '@txo/redux'
-import {
-  createReduxAdvanced,
-  type HandlerAction,
-  type Attributes,
-  type Handler,
 } from '@txo/redux'
 
 import type {
@@ -47,7 +45,7 @@ export const createContextRedux = <
     handler: Handler<INNER_STATE, ACTION> | undefined,
   ) => {
     let nextState: ContextInnerState = state ?? {}
-    if (handler) {
+    if (handler != null) {
       const _handler = handler
       nextState = translateOnPath<INNER_STATE>(action.context ?? DEFAULT_CONTEXT, state as INNER_STATE, (internalState) => {
         const nextInnerState = _handler(internalState ?? attributes.initialState, action.attributes, action)
