@@ -43,7 +43,7 @@ Handlers
   handlers: {
     add: (state, { item }) => {
       log.debug('ADD', { state, item })
-      const a = (item != null || item !== '')
+      const a = (item != null && item !== '')
         ? [...state, item]
         : state
       return a
