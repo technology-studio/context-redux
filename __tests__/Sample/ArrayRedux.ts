@@ -24,7 +24,7 @@ export type Handlers = {
 }
 
 const remove = <TYPE>(array: TYPE[], value: TYPE | undefined): TYPE[] => {
-  if (value != null) {
+  if (value != null && value !== '') {
     const index = array.indexOf(value)
     if (index !== -1) {
       return [...array.slice(0, index), ...array.slice(index + 1)]
