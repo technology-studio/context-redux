@@ -1,3 +1,10 @@
+## [3.0.9](https://github.com/technology-studio/context-redux/compare/v3.0.8...v3.0.9) (2023-07-20)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages ([#301](https://github.com/technology-studio/context-redux/issues/301)) ([3d25652](https://github.com/technology-studio/context-redux/commit/3d2565251d56f486dbc8e9fc7d61583fe556a867))
+
 ## [3.0.8](https://github.com/technology-studio/context-redux/compare/v3.0.7...v3.0.8) (2023-03-08)
 
 
