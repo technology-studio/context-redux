@@ -16,7 +16,7 @@ export type ContextActionAttributes = {
 }
 
 export type ContextActionCreator<
-  ATTRIBUTES extends Record<string, unknown>,
+  ATTRIBUTES extends Record<string, unknown> | undefined,
   ADDITIONAL_ACTION_ATTRIBUTES extends ContextActionAttributes | undefined = ContextActionAttributes,
 > = (
   attributes: ATTRIBUTES,
