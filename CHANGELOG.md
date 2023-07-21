@@ -1,3 +1,10 @@
+## [3.0.13](https://github.com/technology-studio/context-redux/compare/v3.0.12...v3.0.13) (2023-07-21)
+
+
+### Bug fixes
+
+* add undefined to attributes generic type ([#308](https://github.com/technology-studio/context-redux/issues/308)) ([6e79251](https://github.com/technology-studio/context-redux/commit/6e79251e09860e421fdb80cabb4110503611d3fb))
+
 ## [3.0.12](https://github.com/technology-studio/context-redux/compare/v3.0.11...v3.0.12) (2023-07-21)
 
 
