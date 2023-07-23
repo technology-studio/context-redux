@@ -1,3 +1,10 @@
+## [3.0.18](https://github.com/technology-studio/context-redux/compare/v3.0.17...v3.0.18) (2023-07-23)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/functional to ^4.6.8 ([4d25108](https://github.com/technology-studio/context-redux/commit/4d2510860a16dc0dc10a5af86e535cf830c4d0f6))
+
 ## [3.0.17](https://github.com/technology-studio/context-redux/compare/v3.0.16...v3.0.17) (2023-07-22)
 
 
