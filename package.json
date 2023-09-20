@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@txo/functional": "^4.6.15",
-    "@txo/redux": "^4.0.26"
+    "@txo/redux": "^4.0.27"
   },
   "peerDependencies": {
     "@txo-peer-dep/log": "^4.0.2"
