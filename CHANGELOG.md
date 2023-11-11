@@ -1,3 +1,10 @@
+## [3.0.31](https://github.com/technology-studio/context-redux/compare/v3.0.30...v3.0.31) (2023-11-11)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/log to ^4.0.3 ([3f54f83](https://github.com/technology-studio/context-redux/commit/3f54f832c6940fe8c77c64255ae8ddc3dee12b91))
+
 ## [3.0.30](https://github.com/technology-studio/context-redux/compare/v3.0.29...v3.0.30) (2023-09-21)
 
 
