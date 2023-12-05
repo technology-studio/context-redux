@@ -1,3 +1,10 @@
+## [3.0.34](https://github.com/technology-studio/context-redux/compare/v3.0.33...v3.0.34) (2023-12-05)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/redux to ^4.0.30 ([#462](https://github.com/technology-studio/context-redux/issues/462)) ([9f3285a](https://github.com/technology-studio/context-redux/commit/9f3285a6eb76fec38259955dd64b62b05c8dcecd))
+
 ## [3.0.33](https://github.com/technology-studio/context-redux/compare/v3.0.32...v3.0.33) (2023-11-11)
 
 
