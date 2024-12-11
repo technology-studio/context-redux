@@ -1,0 +1,8 @@
+[
+  "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-unnecessary-condition",
+  "@stylistic/arrow-parens",
+  "eslint-comments/require-description",
+  "@typescript-eslint/no-unnecessary-type-arguments",
+  "@typescript-eslint/no-unsafe-type-assertion"
+]
